@@ -22,11 +22,19 @@ function App() {
     setTodos([...todos, todo]);
   };
 
+  const deleteTodo = (todo) => {
+    setTodos(todos.filter((item) => item !== todo));
+  };
+
   return (
     <div className='App'>
       <h1>TODO APP</h1>
       <InputTodo addTodo={addTodo} />
-      <IncompleteTodos todos={todos} completeTodo={completeTodo} />
+      <IncompleteTodos
+        todos={todos}
+        completeTodo={completeTodo}
+        deleteTodo={deleteTodo}
+      />
       <hr />
       <CompleteTodos completedTodos={completedTodos} returnTodo={returnTodo} />
     </div>
