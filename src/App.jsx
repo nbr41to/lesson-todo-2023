@@ -76,7 +76,7 @@ function App() {
   };
 
   return (
-    <div className='App'>
+    <div className='root'>
       <h1>TODO APP</h1>
       <InputTodo addTodo={addTodo} />
       <IncompleteTodos
@@ -86,7 +86,6 @@ function App() {
         deleteTodo={deleteTodo}
         deleteAllTodo={deleteAllTodo}
       />
-      <hr />
       <CompleteTodos
         completedTodos={completedTodos}
         returnTodo={returnTodo}

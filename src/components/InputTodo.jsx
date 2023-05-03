@@ -10,8 +10,8 @@ export const InputTodo = ({ addTodo }) => {
   };
 
   return (
-    <div className='input-form'>
-      <div>
+    <div className='input-todo-root'>
+      <div className='input-container'>
         <input
           type='text'
           placeholder='TODOを入力'

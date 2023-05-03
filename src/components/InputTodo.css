@@ -1,7 +1,14 @@
-.input-form {
-  border: solid 1px #444;
+.input-todo-root {
+  background-color: lightgreen;
   padding: 16px;
   border-radius: 8px;
+}
 
-  width: fit-content;
+.input-container > input {
+  border: 0.5px solid #666;
+  border-radius: 8px;
+  outline: none;
+  padding: 4px 8px;
+  height: 40px;
+  margin-right: 8px;
 }
